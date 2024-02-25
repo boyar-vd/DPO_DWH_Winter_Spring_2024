@@ -1,0 +1,453 @@
+[2024-02-25T11:22:01.830+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_data_from_csv.csv_to_stg scheduled__2024-02-25T11:21:00+00:00 [queued]>
+[2024-02-25T11:22:01.838+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_data_from_csv.csv_to_stg scheduled__2024-02-25T11:21:00+00:00 [queued]>
+[2024-02-25T11:22:01.839+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2024-02-25T11:22:01.853+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): csv_to_stg> on 2024-02-25 11:21:00+00:00
+[2024-02-25T11:22:01.869+0000] {standard_task_runner.py:57} INFO - Started process 1030 to run task
+[2024-02-25T11:22:01.874+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'load_data_from_csv', 'csv_to_stg', 'scheduled__2024-02-25T11:21:00+00:00', '--job-id', '148', '--raw', '--subdir', 'DAGS_FOLDER/dag_raw_to_dds.py', '--cfg-path', '/tmp/tmpejtfeb_8']
+[2024-02-25T11:22:01.877+0000] {standard_task_runner.py:85} INFO - Job 148: Subtask csv_to_stg
+[2024-02-25T11:22:01.933+0000] {task_command.py:410} INFO - Running <TaskInstance: load_data_from_csv.csv_to_stg scheduled__2024-02-25T11:21:00+00:00 [running]> on host 44b084e90875
+[2024-02-25T11:22:02.009+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='load_data_from_csv' AIRFLOW_CTX_TASK_ID='csv_to_stg' AIRFLOW_CTX_EXECUTION_DATE='2024-02-25T11:21:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-25T11:21:00+00:00'
+[2024-02-25T11:22:03.625+0000] {log.py:232} WARNING - 2024-02-25 11:22:03,625 INFO sqlalchemy.engine.Engine select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname=%(schema)s and relname=%(name)s
+[2024-02-25T11:22:03.625+0000] {log.py:128} INFO - select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname=%(schema)s and relname=%(name)s
+[2024-02-25T11:22:03.629+0000] {log.py:232} WARNING - 2024-02-25 11:22:03,629 INFO sqlalchemy.engine.Engine [generated in 0.00441s] {'schema': 'stg', 'name': 'csv_fraud_data'}
+[2024-02-25T11:22:03.629+0000] {log.py:128} INFO - [generated in 0.00441s] {'schema': 'stg', 'name': 'csv_fraud_data'}
+[2024-02-25T11:22:03.675+0000] {log.py:232} WARNING - 2024-02-25 11:22:03,675 INFO sqlalchemy.engine.Engine select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname=%(schema)s and relname=%(name)s
+[2024-02-25T11:22:03.675+0000] {log.py:128} INFO - select relname from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname=%(schema)s and relname=%(name)s
+[2024-02-25T11:22:03.678+0000] {log.py:232} WARNING - 2024-02-25 11:22:03,678 INFO sqlalchemy.engine.Engine [cached since 0.0538s ago] {'schema': 'stg', 'name': 'csv_fraud_data'}
+[2024-02-25T11:22:03.678+0000] {log.py:128} INFO - [cached since 0.0538s ago] {'schema': 'stg', 'name': 'csv_fraud_data'}
+[2024-02-25T11:22:03.719+0000] {log.py:232} WARNING - 2024-02-25 11:22:03,719 INFO sqlalchemy.engine.Engine SELECT c.relname FROM pg_class c JOIN pg_namespace n ON n.oid = c.relnamespace WHERE n.nspname = %(schema)s AND c.relkind in ('r', 'p')
+[2024-02-25T11:22:03.719+0000] {log.py:128} INFO - SELECT c.relname FROM pg_class c JOIN pg_namespace n ON n.oid = c.relnamespace WHERE n.nspname = %(schema)s AND c.relkind in ('r', 'p')
+[2024-02-25T11:22:03.721+0000] {log.py:232} WARNING - 2024-02-25 11:22:03,721 INFO sqlalchemy.engine.Engine [generated in 0.00208s] {'schema': 'stg'}
+[2024-02-25T11:22:03.721+0000] {log.py:128} INFO - [generated in 0.00208s] {'schema': 'stg'}
+[2024-02-25T11:22:03.753+0000] {log.py:232} WARNING - 2024-02-25 11:22:03,753 INFO sqlalchemy.engine.Engine 
+            SELECT c.oid
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE (n.nspname = %(schema)s)
+            AND c.relname = %(table_name)s AND c.relkind in
+            ('r', 'v', 'm', 'f', 'p')
+        
+[2024-02-25T11:22:03.753+0000] {log.py:128} INFO - 
+            SELECT c.oid
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE (n.nspname = %(schema)s)
+            AND c.relname = %(table_name)s AND c.relkind in
+            ('r', 'v', 'm', 'f', 'p')
+        
+[2024-02-25T11:22:03.755+0000] {log.py:232} WARNING - 2024-02-25 11:22:03,755 INFO sqlalchemy.engine.Engine [generated in 0.00265s] {'schema': 'stg', 'table_name': 'csv_fraud_data'}
+[2024-02-25T11:22:03.755+0000] {log.py:128} INFO - [generated in 0.00265s] {'schema': 'stg', 'table_name': 'csv_fraud_data'}
+[2024-02-25T11:22:03.770+0000] {log.py:232} WARNING - 2024-02-25 11:22:03,770 INFO sqlalchemy.engine.Engine 
+            SELECT a.attname,
+              pg_catalog.format_type(a.atttypid, a.atttypmod),
+              (
+                SELECT pg_catalog.pg_get_expr(d.adbin, d.adrelid)
+                FROM pg_catalog.pg_attrdef d
+                WHERE d.adrelid = a.attrelid AND d.adnum = a.attnum
+                AND a.atthasdef
+              ) AS DEFAULT,
+              a.attnotnull,
+              a.attrelid as table_oid,
+              pgd.description as comment,
+              a.attgenerated as generated,
+                              (SELECT json_build_object(
+                    'always', a.attidentity = 'a',
+                    'start', s.seqstart,
+                    'increment', s.seqincrement,
+                    'minvalue', s.seqmin,
+                    'maxvalue', s.seqmax,
+                    'cache', s.seqcache,
+                    'cycle', s.seqcycle)
+                FROM pg_catalog.pg_sequence s
+                JOIN pg_catalog.pg_class c on s.seqrelid = c."oid"
+                WHERE c.relkind = 'S'
+                AND a.attidentity != ''
+                AND s.seqrelid = pg_catalog.pg_get_serial_sequence(
+                    a.attrelid::regclass::text, a.attname
+                )::regclass::oid
+                ) as identity_options                
+            FROM pg_catalog.pg_attribute a
+            LEFT JOIN pg_catalog.pg_description pgd ON (
+                pgd.objoid = a.attrelid AND pgd.objsubid = a.attnum)
+            WHERE a.attrelid = %(table_oid)s
+            AND a.attnum > 0 AND NOT a.attisdropped
+            ORDER BY a.attnum
+        
+[2024-02-25T11:22:03.770+0000] {log.py:128} INFO - 
+            SELECT a.attname,
+              pg_catalog.format_type(a.atttypid, a.atttypmod),
+              (
+                SELECT pg_catalog.pg_get_expr(d.adbin, d.adrelid)
+                FROM pg_catalog.pg_attrdef d
+                WHERE d.adrelid = a.attrelid AND d.adnum = a.attnum
+                AND a.atthasdef
+              ) AS DEFAULT,
+              a.attnotnull,
+              a.attrelid as table_oid,
+              pgd.description as comment,
+              a.attgenerated as generated,
+                              (SELECT json_build_object(
+                    'always', a.attidentity = 'a',
+                    'start', s.seqstart,
+                    'increment', s.seqincrement,
+                    'minvalue', s.seqmin,
+                    'maxvalue', s.seqmax,
+                    'cache', s.seqcache,
+                    'cycle', s.seqcycle)
+                FROM pg_catalog.pg_sequence s
+                JOIN pg_catalog.pg_class c on s.seqrelid = c."oid"
+                WHERE c.relkind = 'S'
+                AND a.attidentity != ''
+                AND s.seqrelid = pg_catalog.pg_get_serial_sequence(
+                    a.attrelid::regclass::text, a.attname
+                )::regclass::oid
+                ) as identity_options                
+            FROM pg_catalog.pg_attribute a
+            LEFT JOIN pg_catalog.pg_description pgd ON (
+                pgd.objoid = a.attrelid AND pgd.objsubid = a.attnum)
+            WHERE a.attrelid = %(table_oid)s
+            AND a.attnum > 0 AND NOT a.attisdropped
+            ORDER BY a.attnum
+        
+[2024-02-25T11:22:03.771+0000] {log.py:232} WARNING - 2024-02-25 11:22:03,771 INFO sqlalchemy.engine.Engine [generated in 0.00171s] {'table_oid': 30948}
+[2024-02-25T11:22:03.771+0000] {log.py:128} INFO - [generated in 0.00171s] {'table_oid': 30948}
+[2024-02-25T11:22:03.871+0000] {log.py:232} WARNING - 2024-02-25 11:22:03,871 INFO sqlalchemy.engine.Engine 
+            SELECT t.typname as "name",
+               pg_catalog.format_type(t.typbasetype, t.typtypmod) as "attype",
+               not t.typnotnull as "nullable",
+               t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema"
+            FROM pg_catalog.pg_type t
+               LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+            WHERE t.typtype = 'd'
+        
+[2024-02-25T11:22:03.871+0000] {log.py:128} INFO - 
+            SELECT t.typname as "name",
+               pg_catalog.format_type(t.typbasetype, t.typtypmod) as "attype",
+               not t.typnotnull as "nullable",
+               t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema"
+            FROM pg_catalog.pg_type t
+               LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+            WHERE t.typtype = 'd'
+        
+[2024-02-25T11:22:03.874+0000] {log.py:232} WARNING - 2024-02-25 11:22:03,874 INFO sqlalchemy.engine.Engine [generated in 0.00286s] {}
+[2024-02-25T11:22:03.874+0000] {log.py:128} INFO - [generated in 0.00286s] {}
+[2024-02-25T11:22:03.954+0000] {log.py:232} WARNING - 2024-02-25 11:22:03,954 INFO sqlalchemy.engine.Engine 
+            SELECT t.typname as "name",
+               -- no enum defaults in 8.4 at least
+               -- t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema",
+               e.enumlabel as "label"
+            FROM pg_catalog.pg_type t
+                 LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+                 LEFT JOIN pg_catalog.pg_enum e ON t.oid = e.enumtypid
+            WHERE t.typtype = 'e'
+        ORDER BY "schema", "name", e.oid
+[2024-02-25T11:22:03.954+0000] {log.py:128} INFO - 
+            SELECT t.typname as "name",
+               -- no enum defaults in 8.4 at least
+               -- t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema",
+               e.enumlabel as "label"
+            FROM pg_catalog.pg_type t
+                 LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+                 LEFT JOIN pg_catalog.pg_enum e ON t.oid = e.enumtypid
+            WHERE t.typtype = 'e'
+        ORDER BY "schema", "name", e.oid
+[2024-02-25T11:22:03.962+0000] {log.py:232} WARNING - 2024-02-25 11:22:03,962 INFO sqlalchemy.engine.Engine [generated in 0.00873s] {}
+[2024-02-25T11:22:03.962+0000] {log.py:128} INFO - [generated in 0.00873s] {}
+[2024-02-25T11:22:03.989+0000] {log.py:232} WARNING - 2024-02-25 11:22:03,989 INFO sqlalchemy.engine.Engine 
+                SELECT a.attname
+                FROM pg_attribute a JOIN (
+                    SELECT unnest(ix.indkey) attnum,
+                           generate_subscripts(ix.indkey, 1) ord
+                    FROM pg_index ix
+                    WHERE ix.indrelid = %(table_oid)s AND ix.indisprimary
+                    ) k ON a.attnum=k.attnum
+                WHERE a.attrelid = %(table_oid)s
+                ORDER BY k.ord
+            
+[2024-02-25T11:22:03.989+0000] {log.py:128} INFO - 
+                SELECT a.attname
+                FROM pg_attribute a JOIN (
+                    SELECT unnest(ix.indkey) attnum,
+                           generate_subscripts(ix.indkey, 1) ord
+                    FROM pg_index ix
+                    WHERE ix.indrelid = %(table_oid)s AND ix.indisprimary
+                    ) k ON a.attnum=k.attnum
+                WHERE a.attrelid = %(table_oid)s
+                ORDER BY k.ord
+            
+[2024-02-25T11:22:03.993+0000] {log.py:232} WARNING - 2024-02-25 11:22:03,993 INFO sqlalchemy.engine.Engine [generated in 0.00460s] {'table_oid': 30948}
+[2024-02-25T11:22:03.993+0000] {log.py:128} INFO - [generated in 0.00460s] {'table_oid': 30948}
+[2024-02-25T11:22:04.009+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,009 INFO sqlalchemy.engine.Engine 
+        SELECT conname
+           FROM  pg_catalog.pg_constraint r
+           WHERE r.conrelid = %(table_oid)s AND r.contype = 'p'
+           ORDER BY 1
+        
+[2024-02-25T11:22:04.009+0000] {log.py:128} INFO - 
+        SELECT conname
+           FROM  pg_catalog.pg_constraint r
+           WHERE r.conrelid = %(table_oid)s AND r.contype = 'p'
+           ORDER BY 1
+        
+[2024-02-25T11:22:04.011+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,011 INFO sqlalchemy.engine.Engine [generated in 0.00166s] {'table_oid': 30948}
+[2024-02-25T11:22:04.011+0000] {log.py:128} INFO - [generated in 0.00166s] {'table_oid': 30948}
+[2024-02-25T11:22:04.026+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,026 INFO sqlalchemy.engine.Engine 
+          SELECT r.conname,
+                pg_catalog.pg_get_constraintdef(r.oid, true) as condef,
+                n.nspname as conschema
+          FROM  pg_catalog.pg_constraint r,
+                pg_namespace n,
+                pg_class c
+
+          WHERE r.conrelid = %(table)s AND
+                r.contype = 'f' AND
+                c.oid = confrelid AND
+                n.oid = c.relnamespace
+          ORDER BY 1
+        
+[2024-02-25T11:22:04.026+0000] {log.py:128} INFO - 
+          SELECT r.conname,
+                pg_catalog.pg_get_constraintdef(r.oid, true) as condef,
+                n.nspname as conschema
+          FROM  pg_catalog.pg_constraint r,
+                pg_namespace n,
+                pg_class c
+
+          WHERE r.conrelid = %(table)s AND
+                r.contype = 'f' AND
+                c.oid = confrelid AND
+                n.oid = c.relnamespace
+          ORDER BY 1
+        
+[2024-02-25T11:22:04.027+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,027 INFO sqlalchemy.engine.Engine [generated in 0.00161s] {'table': 30948}
+[2024-02-25T11:22:04.027+0000] {log.py:128} INFO - [generated in 0.00161s] {'table': 30948}
+[2024-02-25T11:22:04.043+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,043 INFO sqlalchemy.engine.Engine 
+              SELECT
+                  i.relname as relname,
+                  ix.indisunique, ix.indexprs,
+                  a.attname, a.attnum, c.conrelid, ix.indkey::varchar,
+                  ix.indoption::varchar, i.reloptions, am.amname,
+                  pg_get_expr(ix.indpred, ix.indrelid),
+                  ix.indnkeyatts as indnkeyatts
+              FROM
+                  pg_class t
+                        join pg_index ix on t.oid = ix.indrelid
+                        join pg_class i on i.oid = ix.indexrelid
+                        left outer join
+                            pg_attribute a
+                            on t.oid = a.attrelid and a.attnum = ANY(ix.indkey)
+                        left outer join
+                            pg_constraint c
+                            on (ix.indrelid = c.conrelid and
+                                ix.indexrelid = c.conindid and
+                                c.contype in ('p', 'u', 'x'))
+                        left outer join
+                            pg_am am
+                            on i.relam = am.oid
+              WHERE
+                  t.relkind IN ('r', 'v', 'f', 'm', 'p')
+                  and t.oid = %(table_oid)s
+                  and ix.indisprimary = 'f'
+              ORDER BY
+                  t.relname,
+                  i.relname
+            
+[2024-02-25T11:22:04.043+0000] {log.py:128} INFO - 
+              SELECT
+                  i.relname as relname,
+                  ix.indisunique, ix.indexprs,
+                  a.attname, a.attnum, c.conrelid, ix.indkey::varchar,
+                  ix.indoption::varchar, i.reloptions, am.amname,
+                  pg_get_expr(ix.indpred, ix.indrelid),
+                  ix.indnkeyatts as indnkeyatts
+              FROM
+                  pg_class t
+                        join pg_index ix on t.oid = ix.indrelid
+                        join pg_class i on i.oid = ix.indexrelid
+                        left outer join
+                            pg_attribute a
+                            on t.oid = a.attrelid and a.attnum = ANY(ix.indkey)
+                        left outer join
+                            pg_constraint c
+                            on (ix.indrelid = c.conrelid and
+                                ix.indexrelid = c.conindid and
+                                c.contype in ('p', 'u', 'x'))
+                        left outer join
+                            pg_am am
+                            on i.relam = am.oid
+              WHERE
+                  t.relkind IN ('r', 'v', 'f', 'm', 'p')
+                  and t.oid = %(table_oid)s
+                  and ix.indisprimary = 'f'
+              ORDER BY
+                  t.relname,
+                  i.relname
+            
+[2024-02-25T11:22:04.045+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,045 INFO sqlalchemy.engine.Engine [generated in 0.00211s] {'table_oid': 30948}
+[2024-02-25T11:22:04.045+0000] {log.py:128} INFO - [generated in 0.00211s] {'table_oid': 30948}
+[2024-02-25T11:22:04.060+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,060 INFO sqlalchemy.engine.Engine 
+            SELECT
+                cons.conname as name,
+                cons.conkey as key,
+                a.attnum as col_num,
+                a.attname as col_name
+            FROM
+                pg_catalog.pg_constraint cons
+                join pg_attribute a
+                  on cons.conrelid = a.attrelid AND
+                    a.attnum = ANY(cons.conkey)
+            WHERE
+                cons.conrelid = %(table_oid)s AND
+                cons.contype = 'u'
+        
+[2024-02-25T11:22:04.060+0000] {log.py:128} INFO - 
+            SELECT
+                cons.conname as name,
+                cons.conkey as key,
+                a.attnum as col_num,
+                a.attname as col_name
+            FROM
+                pg_catalog.pg_constraint cons
+                join pg_attribute a
+                  on cons.conrelid = a.attrelid AND
+                    a.attnum = ANY(cons.conkey)
+            WHERE
+                cons.conrelid = %(table_oid)s AND
+                cons.contype = 'u'
+        
+[2024-02-25T11:22:04.062+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,062 INFO sqlalchemy.engine.Engine [generated in 0.00133s] {'table_oid': 30948}
+[2024-02-25T11:22:04.062+0000] {log.py:128} INFO - [generated in 0.00133s] {'table_oid': 30948}
+[2024-02-25T11:22:04.076+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,076 INFO sqlalchemy.engine.Engine 
+            SELECT
+                cons.conname as name,
+                pg_get_constraintdef(cons.oid) as src
+            FROM
+                pg_catalog.pg_constraint cons
+            WHERE
+                cons.conrelid = %(table_oid)s AND
+                cons.contype = 'c'
+        
+[2024-02-25T11:22:04.076+0000] {log.py:128} INFO - 
+            SELECT
+                cons.conname as name,
+                pg_get_constraintdef(cons.oid) as src
+            FROM
+                pg_catalog.pg_constraint cons
+            WHERE
+                cons.conrelid = %(table_oid)s AND
+                cons.contype = 'c'
+        
+[2024-02-25T11:22:04.077+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,077 INFO sqlalchemy.engine.Engine [generated in 0.00173s] {'table_oid': 30948}
+[2024-02-25T11:22:04.077+0000] {log.py:128} INFO - [generated in 0.00173s] {'table_oid': 30948}
+[2024-02-25T11:22:04.093+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,093 INFO sqlalchemy.engine.Engine 
+            SELECT
+                pgd.description as table_comment
+            FROM
+                pg_catalog.pg_description pgd
+            WHERE
+                pgd.objsubid = 0 AND
+                pgd.objoid = %(table_oid)s
+        
+[2024-02-25T11:22:04.093+0000] {log.py:128} INFO - 
+            SELECT
+                pgd.description as table_comment
+            FROM
+                pg_catalog.pg_description pgd
+            WHERE
+                pgd.objsubid = 0 AND
+                pgd.objoid = %(table_oid)s
+        
+[2024-02-25T11:22:04.095+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,095 INFO sqlalchemy.engine.Engine [generated in 0.00191s] {'table_oid': 30948}
+[2024-02-25T11:22:04.095+0000] {log.py:128} INFO - [generated in 0.00191s] {'table_oid': 30948}
+[2024-02-25T11:22:04.124+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,124 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+[2024-02-25T11:22:04.124+0000] {log.py:128} INFO - BEGIN (implicit)
+[2024-02-25T11:22:04.127+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,127 INFO sqlalchemy.engine.Engine 
+DROP TABLE stg.csv_fraud_data
+[2024-02-25T11:22:04.127+0000] {log.py:128} INFO - 
+DROP TABLE stg.csv_fraud_data
+[2024-02-25T11:22:04.129+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,129 INFO sqlalchemy.engine.Engine [no key 0.00142s] {}
+[2024-02-25T11:22:04.129+0000] {log.py:128} INFO - [no key 0.00142s] {}
+[2024-02-25T11:22:04.157+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,156 INFO sqlalchemy.engine.Engine COMMIT
+[2024-02-25T11:22:04.156+0000] {log.py:128} INFO - COMMIT
+[2024-02-25T11:22:04.180+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,180 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+[2024-02-25T11:22:04.180+0000] {log.py:128} INFO - BEGIN (implicit)
+[2024-02-25T11:22:04.189+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,189 INFO sqlalchemy.engine.Engine 
+CREATE TABLE stg.csv_fraud_data (
+	"Unnamed: 0" BIGINT, 
+	"Unnamed: 0.1" BIGINT, 
+	trans_date_trans_time TEXT, 
+	cc_num BIGINT, 
+	merchant TEXT, 
+	category TEXT, 
+	amt FLOAT(53), 
+	first TEXT, 
+	last TEXT, 
+	gender TEXT, 
+	street TEXT, 
+	city TEXT, 
+	state TEXT, 
+	zip BIGINT, 
+	lat FLOAT(53), 
+	long FLOAT(53), 
+	city_pop BIGINT, 
+	job TEXT, 
+	dob TEXT, 
+	trans_num TEXT, 
+	unix_time BIGINT, 
+	merch_lat FLOAT(53), 
+	merch_long FLOAT(53), 
+	is_fraud BIGINT
+)
+[2024-02-25T11:22:04.189+0000] {log.py:128} INFO - 
+CREATE TABLE stg.csv_fraud_data (
+	"Unnamed: 0" BIGINT, 
+	"Unnamed: 0.1" BIGINT, 
+	trans_date_trans_time TEXT, 
+	cc_num BIGINT, 
+	merchant TEXT, 
+	category TEXT, 
+	amt FLOAT(53), 
+	first TEXT, 
+	last TEXT, 
+	gender TEXT, 
+	street TEXT, 
+	city TEXT, 
+	state TEXT, 
+	zip BIGINT, 
+	lat FLOAT(53), 
+	long FLOAT(53), 
+	city_pop BIGINT, 
+	job TEXT, 
+	dob TEXT, 
+	trans_num TEXT, 
+	unix_time BIGINT, 
+	merch_lat FLOAT(53), 
+	merch_long FLOAT(53), 
+	is_fraud BIGINT
+)
+
+
+[2024-02-25T11:22:04.191+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,191 INFO sqlalchemy.engine.Engine [no key 0.00238s] {}
+[2024-02-25T11:22:04.191+0000] {log.py:128} INFO - [no key 0.00238s] {}
+[2024-02-25T11:22:04.237+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,237 INFO sqlalchemy.engine.Engine COMMIT
+[2024-02-25T11:22:04.237+0000] {log.py:128} INFO - COMMIT
+[2024-02-25T11:22:04.281+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,281 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+[2024-02-25T11:22:04.281+0000] {log.py:128} INFO - BEGIN (implicit)
+[2024-02-25T11:22:04.529+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,529 INFO sqlalchemy.engine.Engine INSERT INTO stg.csv_fraud_data ("Unnamed: 0", "Unnamed: 0.1", trans_date_trans_time, cc_num, merchant, category, amt, first, last, gender, street, city, state, zip, lat, long, city_pop, job, dob, trans_num, unix_time, merch_lat, merch_long, is_fraud) VALUES (%(UnnamedC_0)s, %(UnnamedC_0.1)s, %(trans_date_trans_time)s, %(cc_num)s, %(merchant)s, %(category)s, %(amt)s, %(first)s, %(last)s, %(gender)s, %(street)s, %(city)s, %(state)s, %(zip)s, %(lat)s, %(long)s, %(city_pop)s, %(job)s, %(dob)s, %(trans_num)s, %(unix_time)s, %(merch_lat)s, %(merch_long)s, %(is_fraud)s)
+[2024-02-25T11:22:04.529+0000] {log.py:128} INFO - INSERT INTO stg.csv_fraud_data ("Unnamed: 0", "Unnamed: 0.1", trans_date_trans_time, cc_num, merchant, category, amt, first, last, gender, street, city, state, zip, lat, long, city_pop, job, dob, trans_num, unix_time, merch_lat, merch_long, is_fraud) VALUES (%(UnnamedC_0)s, %(UnnamedC_0.1)s, %(trans_date_trans_time)s, %(cc_num)s, %(merchant)s, %(category)s, %(amt)s, %(first)s, %(last)s, %(gender)s, %(street)s, %(city)s, %(state)s, %(zip)s, %(lat)s, %(long)s, %(city_pop)s, %(job)s, %(dob)s, %(trans_num)s, %(unix_time)s, %(merch_lat)s, %(merch_long)s, %(is_fraud)s)
+[2024-02-25T11:22:04.533+0000] {log.py:232} WARNING - 2024-02-25 11:22:04,533 INFO sqlalchemy.engine.Engine [generated in 0.22480s] ({'UnnamedC_0': 811778, 'UnnamedC_0.1': 811778, 'trans_date_trans_time': '2019-12-07 10:55:06', 'cc_num': 676173792455, 'merchant': 'fraud_Zieme, Bode and Dooley', 'category': 'gas_transport', 'amt': 86.19, 'first': 'Brittany', 'last': 'Cox', 'gender': 'F', 'street': '07177 William Dale Apt. 547', 'city': 'Santa Monica', 'state': 'CA', 'zip': 90403, 'lat': 34.0287, 'long': -118.4924, 'city_pop': 92043, 'job': 'Civil engineer, contracting', 'dob': '1961-04-25', 'trans_num': 'f32d1f4b2a918f4c2f6acdc83033ee35', 'unix_time': 1354877706, 'merch_lat': 33.287851, 'merch_long': -118.74097, 'is_fraud': 0}, {'UnnamedC_0': 1101718, 'UnnamedC_0.1': 1101718, 'trans_date_trans_time': '2020-04-03 13:10:06', 'cc_num': 30518206766474, 'merchant': 'fraud_Lind-Buckridge', 'category': 'entertainment', 'amt': 85.81, 'first': 'Tamara', 'last': 'Martinez', 'gender': 'F', 'street': '471 Marquez Prairie Suite 680', 'city': 'Matthews', 'state': 'MO', 'zip': 63867, 'lat': 36.7154, 'long': -89.6287, 'city_pop': 1019, 'job': 'Aeronautical engineer', 'dob': '1979-01-26', 'trans_num': 'f5dad8e2d7c39d81502d846a20286659', 'unix_time': 1364994606, 'merch_lat': 36.53995, 'merch_long': -89.857416, 'is_fraud': 0}, {'UnnamedC_0': 800013, 'UnnamedC_0.1': 800013, 'trans_date_trans_time': '2019-12-04 07:07:04', 'cc_num': 4658490815480264, 'merchant': 'fraud_Hackett-Lueilwitz', 'category': 'grocery_pos', 'amt': 99.3, 'first': 'Tara', 'last': 'Richards', 'gender': 'F', 'street': '4879 Cristina Station', 'city': 'Keisterville', 'state': 'PA', 'zip': 15449, 'lat': 39.9636, 'long': -79.7853, 'city_pop': 184, 'job': 'Systems developer', 'dob': '1945-11-04', 'trans_num': '1d023bc78ab93ab65a35bbb53bcc67bd', 'unix_time': 1354604824, 'merch_lat': 39.582872, 'merch_long': -78.83855, 'is_fraud': 0}, {'UnnamedC_0': 398945, 'UnnamedC_0.1': 398945, 'trans_date_trans_time': '2019-06-30 18:43:08', 'cc_num': 4716561796955522, 'merchant': 'fraud_Lynch-Wisozk', 'category': 'home', 'amt': 42.09, 'first': 'Lauren', 'last': 'Anderson', 'gender': 'F', 'street': '11014 Chad Lake Apt. 573', 'city': 'Heart Butte', 'state': 'MT', 'zip': 59448, 'lat': 48.2777, 'long': -112.8456, 'city_pop': 743, 'job': 'Water engineer', 'dob': '1972-05-04', 'trans_num': 'dbf6c06d3277438afdf7af883fb4285f', 'unix_time': 1341081788, 'merch_lat': 48.310513, 'merch_long': -112.837535, 'is_fraud': 0}, {'UnnamedC_0': 207455, 'UnnamedC_0.1': 207455, 'trans_date_trans_time': '2019-04-15 19:57:49', 'cc_num': 3528407217576457, 'merchant': 'fraud_Fisher-Schowalter', 'category': 'shopping_net', 'amt': 4.24, 'first': 'Patricia', 'last': 'Leach', 'gender': 'F', 'street': '71309 Martinez Stravenue', 'city': 'Kingsport', 'state': 'TN', 'zip': 37663, 'lat': 36.4715, 'long': -82.4834, 'city_pop': 87124, 'job': 'Warden/ranger', 'dob': '1987-02-14', 'trans_num': '88814660aba0101b174e1e8137f4a7af', 'unix_time': 1334519869, 'merch_lat': 37.329094, 'merch_long': -82.070746, 'is_fraud': 0}, {'UnnamedC_0': 564452, 'UnnamedC_0.1': 564452, 'trans_date_trans_time': '2019-08-28 11:18:46', 'cc_num': 4855488158131690372, 'merchant': 'fraud_Christiansen, Goyette and Schamberger', 'category': 'gas_transport', 'amt': 72.75, 'first': 'Jeremy', 'last': 'Roberson', 'gender': 'M', 'street': '25887 Martin Inlet', 'city': 'Graniteville', 'state': 'VT', 'zip': 5654, 'lat': 44.1554, 'long': -72.4847, 'city_pop': 970, 'job': 'Agricultural consultant', 'dob': '1993-09-29', 'trans_num': '484eff81bd47131f12977154047c4a60', 'unix_time': 1346152726, 'merch_lat': 43.168748, 'merch_long': -72.740002, 'is_fraud': 0}, {'UnnamedC_0': 347018, 'UnnamedC_0.1': 347018, 'trans_date_trans_time': '2019-06-12 06:05:00', 'cc_num': 4979422371139333, 'merchant': 'fraud_Watsica, Haag and Considine', 'category': 'shopping_pos', 'amt': 7.87, 'first': 'Kelly', 'last': 'Zimmerman', 'gender': 'F', 'street': '1893 Katie Tunnel', 'city': 'Westerville', 'state': 'NE', 'zip': 68881, 'lat': 41.4193, 'long': -99.3844, 'city_pop': 73, 'job': 'Product designer', 'dob': '1935-02-10', 'trans_num': '671655ebb10aa252a395c71c0bcbf2ef', 'unix_time': 1339481100, 'merch_lat': 41.528425, 'merch_long': -99.368091, 'is_fraud': 0}, {'UnnamedC_0': 245997, 'UnnamedC_0.1': 245997, 'trans_date_trans_time': '2019-05-03 16:49:24', 'cc_num': 5456776410929288, 'merchant': 'fraud_Metz, Russel and Metz', 'category': 'kids_pets', 'amt': 5.53, 'first': 'Taylor', 'last': 'Khan', 'gender': 'F', 'street': '658 Diane Glen Apt. 677', 'city': 'North Washington', 'state': 'PA', 'zip': 16048, 'lat': 41.0472, 'long': -79.8089, 'city_pop': 139, 'job': 'Patent attorney', 'dob': '1954-05-25', 'trans_num': '997e7001922aefa064ff3459b7b6035c', 'unix_time': 1336063764, 'merch_lat': 40.146899, 'merch_long': -79.386339, 'is_fraud': 0}  ... displaying 10 of 10000 total bound parameter sets ...  {'UnnamedC_0': 114653, 'UnnamedC_0.1': 114653, 'trans_date_trans_time': '2019-03-06 00:04:34', 'cc_num': 4348786085525522, 'merchant': 'fraud_Christiansen-Gusikowski', 'category': 'misc_pos', 'amt': 44.73, 'first': 'John', 'last': 'Nichols', 'gender': 'M', 'street': '862 Anderson Highway', 'city': 'Bryant', 'state': 'WI', 'zip': 54418, 'lat': 45.203, 'long': -88.9983, 'city_pop': 1080, 'job': 'Information systems manager', 'dob': '1979-01-08', 'trans_num': '246183448b4e93961e4d14275a00bea3', 'unix_time': 1330992274, 'merch_lat': 44.546304, 'merch_long': -89.026553, 'is_fraud': 0}, {'UnnamedC_0': 866503, 'UnnamedC_0.1': 866503, 'trans_date_trans_time': '2019-12-19 07:10:01', 'cc_num': 2280870154157385, 'merchant': 'fraud_Hamill-Daugherty', 'category': 'misc_net', 'amt': 9.62, 'first': 'Katherine', 'last': 'Cooper', 'gender': 'F', 'street': '3854 Lauren Springs Suite 648', 'city': 'Oakford', 'state': 'IL', 'zip': 62673, 'lat': 40.0994, 'long': -89.9601, 'city_pop': 530, 'job': 'Transport planner', 'dob': '1967-09-23', 'trans_num': '80c677ac43530108b3229e9072460e2e', 'unix_time': 1355901001, 'merch_lat': 39.610603000000005, 'merch_long': -89.548886, 'is_fraud': 0})
+[2024-02-25T11:22:04.533+0000] {log.py:128} INFO - [generated in 0.22480s] ({'UnnamedC_0': 811778, 'UnnamedC_0.1': 811778, 'trans_date_trans_time': '2019-12-07 10:55:06', 'cc_num': 676173792455, 'merchant': 'fraud_Zieme, Bode and Dooley', 'category': 'gas_transport', 'amt': 86.19, 'first': 'Brittany', 'last': 'Cox', 'gender': 'F', 'street': '07177 William Dale Apt. 547', 'city': 'Santa Monica', 'state': 'CA', 'zip': 90403, 'lat': 34.0287, 'long': -118.4924, 'city_pop': 92043, 'job': 'Civil engineer, contracting', 'dob': '1961-04-25', 'trans_num': 'f32d1f4b2a918f4c2f6acdc83033ee35', 'unix_time': 1354877706, 'merch_lat': 33.287851, 'merch_long': -118.74097, 'is_fraud': 0}, {'UnnamedC_0': 1101718, 'UnnamedC_0.1': 1101718, 'trans_date_trans_time': '2020-04-03 13:10:06', 'cc_num': 30518206766474, 'merchant': 'fraud_Lind-Buckridge', 'category': 'entertainment', 'amt': 85.81, 'first': 'Tamara', 'last': 'Martinez', 'gender': 'F', 'street': '471 Marquez Prairie Suite 680', 'city': 'Matthews', 'state': 'MO', 'zip': 63867, 'lat': 36.7154, 'long': -89.6287, 'city_pop': 1019, 'job': 'Aeronautical engineer', 'dob': '1979-01-26', 'trans_num': 'f5dad8e2d7c39d81502d846a20286659', 'unix_time': 1364994606, 'merch_lat': 36.53995, 'merch_long': -89.857416, 'is_fraud': 0}, {'UnnamedC_0': 800013, 'UnnamedC_0.1': 800013, 'trans_date_trans_time': '2019-12-04 07:07:04', 'cc_num': 4658490815480264, 'merchant': 'fraud_Hackett-Lueilwitz', 'category': 'grocery_pos', 'amt': 99.3, 'first': 'Tara', 'last': 'Richards', 'gender': 'F', 'street': '4879 Cristina Station', 'city': 'Keisterville', 'state': 'PA', 'zip': 15449, 'lat': 39.9636, 'long': -79.7853, 'city_pop': 184, 'job': 'Systems developer', 'dob': '1945-11-04', 'trans_num': '1d023bc78ab93ab65a35bbb53bcc67bd', 'unix_time': 1354604824, 'merch_lat': 39.582872, 'merch_long': -78.83855, 'is_fraud': 0}, {'UnnamedC_0': 398945, 'UnnamedC_0.1': 398945, 'trans_date_trans_time': '2019-06-30 18:43:08', 'cc_num': 4716561796955522, 'merchant': 'fraud_Lynch-Wisozk', 'category': 'home', 'amt': 42.09, 'first': 'Lauren', 'last': 'Anderson', 'gender': 'F', 'street': '11014 Chad Lake Apt. 573', 'city': 'Heart Butte', 'state': 'MT', 'zip': 59448, 'lat': 48.2777, 'long': -112.8456, 'city_pop': 743, 'job': 'Water engineer', 'dob': '1972-05-04', 'trans_num': 'dbf6c06d3277438afdf7af883fb4285f', 'unix_time': 1341081788, 'merch_lat': 48.310513, 'merch_long': -112.837535, 'is_fraud': 0}, {'UnnamedC_0': 207455, 'UnnamedC_0.1': 207455, 'trans_date_trans_time': '2019-04-15 19:57:49', 'cc_num': 3528407217576457, 'merchant': 'fraud_Fisher-Schowalter', 'category': 'shopping_net', 'amt': 4.24, 'first': 'Patricia', 'last': 'Leach', 'gender': 'F', 'street': '71309 Martinez Stravenue', 'city': 'Kingsport', 'state': 'TN', 'zip': 37663, 'lat': 36.4715, 'long': -82.4834, 'city_pop': 87124, 'job': 'Warden/ranger', 'dob': '1987-02-14', 'trans_num': '88814660aba0101b174e1e8137f4a7af', 'unix_time': 1334519869, 'merch_lat': 37.329094, 'merch_long': -82.070746, 'is_fraud': 0}, {'UnnamedC_0': 564452, 'UnnamedC_0.1': 564452, 'trans_date_trans_time': '2019-08-28 11:18:46', 'cc_num': 4855488158131690372, 'merchant': 'fraud_Christiansen, Goyette and Schamberger', 'category': 'gas_transport', 'amt': 72.75, 'first': 'Jeremy', 'last': 'Roberson', 'gender': 'M', 'street': '25887 Martin Inlet', 'city': 'Graniteville', 'state': 'VT', 'zip': 5654, 'lat': 44.1554, 'long': -72.4847, 'city_pop': 970, 'job': 'Agricultural consultant', 'dob': '1993-09-29', 'trans_num': '484eff81bd47131f12977154047c4a60', 'unix_time': 1346152726, 'merch_lat': 43.168748, 'merch_long': -72.740002, 'is_fraud': 0}, {'UnnamedC_0': 347018, 'UnnamedC_0.1': 347018, 'trans_date_trans_time': '2019-06-12 06:05:00', 'cc_num': 4979422371139333, 'merchant': 'fraud_Watsica, Haag and Considine', 'category': 'shopping_pos', 'amt': 7.87, 'first': 'Kelly', 'last': 'Zimmerman', 'gender': 'F', 'street': '1893 Katie Tunnel', 'city': 'Westerville', 'state': 'NE', 'zip': 68881, 'lat': 41.4193, 'long': -99.3844, 'city_pop': 73, 'job': 'Product designer', 'dob': '1935-02-10', 'trans_num': '671655ebb10aa252a395c71c0bcbf2ef', 'unix_time': 1339481100, 'merch_lat': 41.528425, 'merch_long': -99.368091, 'is_fraud': 0}, {'UnnamedC_0': 245997, 'UnnamedC_0.1': 245997, 'trans_date_trans_time': '2019-05-03 16:49:24', 'cc_num': 5456776410929288, 'merchant': 'fraud_Metz, Russel and Metz', 'category': 'kids_pets', 'amt': 5.53, 'first': 'Taylor', 'last': 'Khan', 'gender': 'F', 'street': '658 Diane Glen Apt. 677', 'city': 'North Washington', 'state': 'PA', 'zip': 16048, 'lat': 41.0472, 'long': -79.8089, 'city_pop': 139, 'job': 'Patent attorney', 'dob': '1954-05-25', 'trans_num': '997e7001922aefa064ff3459b7b6035c', 'unix_time': 1336063764, 'merch_lat': 40.146899, 'merch_long': -79.386339, 'is_fraud': 0}  ... displaying 10 of 10000 total bound parameter sets ...  {'UnnamedC_0': 114653, 'UnnamedC_0.1': 114653, 'trans_date_trans_time': '2019-03-06 00:04:34', 'cc_num': 4348786085525522, 'merchant': 'fraud_Christiansen-Gusikowski', 'category': 'misc_pos', 'amt': 44.73, 'first': 'John', 'last': 'Nichols', 'gender': 'M', 'street': '862 Anderson Highway', 'city': 'Bryant', 'state': 'WI', 'zip': 54418, 'lat': 45.203, 'long': -88.9983, 'city_pop': 1080, 'job': 'Information systems manager', 'dob': '1979-01-08', 'trans_num': '246183448b4e93961e4d14275a00bea3', 'unix_time': 1330992274, 'merch_lat': 44.546304, 'merch_long': -89.026553, 'is_fraud': 0}, {'UnnamedC_0': 866503, 'UnnamedC_0.1': 866503, 'trans_date_trans_time': '2019-12-19 07:10:01', 'cc_num': 2280870154157385, 'merchant': 'fraud_Hamill-Daugherty', 'category': 'misc_net', 'amt': 9.62, 'first': 'Katherine', 'last': 'Cooper', 'gender': 'F', 'street': '3854 Lauren Springs Suite 648', 'city': 'Oakford', 'state': 'IL', 'zip': 62673, 'lat': 40.0994, 'long': -89.9601, 'city_pop': 530, 'job': 'Transport planner', 'dob': '1967-09-23', 'trans_num': '80c677ac43530108b3229e9072460e2e', 'unix_time': 1355901001, 'merch_lat': 39.610603000000005, 'merch_long': -89.548886, 'is_fraud': 0})
+[2024-02-25T11:22:05.867+0000] {log.py:232} WARNING - 2024-02-25 11:22:05,866 INFO sqlalchemy.engine.Engine COMMIT
+[2024-02-25T11:22:05.866+0000] {log.py:128} INFO - COMMIT
+[2024-02-25T11:22:05.954+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-02-25T11:22:05.973+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=load_data_from_csv, task_id=csv_to_stg, execution_date=20240225T112100, start_date=20240225T112201, end_date=20240225T112205
+[2024-02-25T11:22:06.045+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-02-25T11:22:06.085+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check

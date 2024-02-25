@@ -1,0 +1,350 @@
+[2023-07-19T18:42:17.465+0000] {processor.py:157} INFO - Started process (PID=33) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:42:17.471+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:42:17.474+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:42:17.473+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:42:17.531+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:42:17.522+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:42:17.533+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:42:17.574+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.112 seconds
+[2023-07-19T18:42:47.714+0000] {processor.py:157} INFO - Started process (PID=93) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:42:47.720+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:42:47.724+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:42:47.723+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:42:47.793+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:42:47.783+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:42:47.794+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:42:47.856+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.153 seconds
+[2023-07-19T18:43:18.077+0000] {processor.py:157} INFO - Started process (PID=152) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:43:18.082+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:43:18.087+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:43:18.086+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:43:18.115+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:43:18.107+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:43:18.117+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:43:18.167+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.097 seconds
+[2023-07-19T18:43:48.526+0000] {processor.py:157} INFO - Started process (PID=211) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:43:48.530+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:43:48.533+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:43:48.532+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:43:48.561+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:43:48.550+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:43:48.562+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:43:48.620+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.103 seconds
+[2023-07-19T18:44:19.377+0000] {processor.py:157} INFO - Started process (PID=269) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:44:19.404+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:44:19.420+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:44:19.419+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:44:19.551+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:44:19.502+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:44:19.555+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:44:19.647+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.345 seconds
+[2023-07-19T18:44:49.905+0000] {processor.py:157} INFO - Started process (PID=328) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:44:49.928+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:44:49.934+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:44:49.934+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:44:50.064+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:44:50.016+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:44:50.076+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:44:50.253+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.373 seconds
+[2023-07-19T18:45:20.482+0000] {processor.py:157} INFO - Started process (PID=388) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:45:20.495+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:45:20.500+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:45:20.499+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:45:20.514+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:45:20.511+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:45:20.516+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:45:20.546+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.081 seconds
+[2023-07-19T18:45:51.026+0000] {processor.py:157} INFO - Started process (PID=446) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:45:51.028+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:45:51.032+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:45:51.031+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:45:51.052+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:45:51.048+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:45:51.054+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:45:51.089+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.073 seconds
+[2023-07-19T18:46:21.522+0000] {processor.py:157} INFO - Started process (PID=505) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:46:21.531+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:46:21.535+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:46:21.534+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:46:21.581+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:46:21.569+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:46:21.603+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:46:21.676+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.168 seconds
+[2023-07-19T18:46:52.688+0000] {processor.py:157} INFO - Started process (PID=564) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:46:52.716+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:46:52.757+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:46:52.754+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:46:53.035+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:46:52.918+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:46:53.046+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:46:53.640+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.981 seconds
+[2023-07-19T18:47:24.541+0000] {processor.py:157} INFO - Started process (PID=623) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:47:24.547+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:47:24.560+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:47:24.556+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:47:24.630+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:47:24.615+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:47:24.636+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:47:24.737+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.213 seconds
+[2023-07-19T18:47:55.517+0000] {processor.py:157} INFO - Started process (PID=682) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:47:55.566+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:47:55.588+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:47:55.581+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:47:55.708+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:47:55.695+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:47:55.721+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:47:55.870+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.438 seconds
+[2023-07-19T18:48:26.647+0000] {processor.py:157} INFO - Started process (PID=741) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:48:26.665+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:48:26.682+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:48:26.675+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:48:26.754+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:48:26.712+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:48:26.771+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:48:26.908+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.289 seconds
+[2023-07-19T18:48:57.321+0000] {processor.py:157} INFO - Started process (PID=801) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:48:57.334+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:48:57.340+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:48:57.338+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:48:57.485+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:48:57.426+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:48:57.503+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:48:57.583+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.322 seconds
+[2023-07-19T18:49:28.346+0000] {processor.py:157} INFO - Started process (PID=860) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:49:28.353+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:49:28.356+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:49:28.356+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:49:28.380+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:49:28.375+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:49:28.387+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:49:28.436+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.097 seconds
+[2023-07-19T18:49:59.077+0000] {processor.py:157} INFO - Started process (PID=919) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:49:59.080+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:49:59.083+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:49:59.083+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:49:59.098+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:49:59.094+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:49:59.100+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:49:59.134+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.065 seconds
+[2023-07-19T18:50:29.673+0000] {processor.py:157} INFO - Started process (PID=978) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:50:29.684+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:50:29.689+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:50:29.688+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:50:29.756+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:50:29.745+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:50:29.761+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:50:29.876+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.224 seconds
+[2023-07-19T18:51:01.102+0000] {processor.py:157} INFO - Started process (PID=1032) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:51:01.675+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:51:01.827+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:51:01.816+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:51:02.227+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:51:02.191+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:51:02.240+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:51:02.717+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 1.869 seconds
+[2023-07-19T18:51:32.965+0000] {processor.py:157} INFO - Started process (PID=1092) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:51:32.967+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:51:32.970+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:51:32.969+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:51:32.998+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:51:32.993+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:51:33.000+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:51:33.035+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.078 seconds
+[2023-07-19T18:52:03.117+0000] {processor.py:157} INFO - Started process (PID=1151) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:52:03.122+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:52:03.128+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:52:03.128+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:52:03.154+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:52:03.146+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:52:03.157+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:52:03.238+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.126 seconds
+[2023-07-19T18:52:33.522+0000] {processor.py:157} INFO - Started process (PID=1211) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:52:33.545+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:52:33.552+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:52:33.551+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:52:33.607+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:52:33.590+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:52:33.614+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:52:33.680+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.163 seconds
+[2023-07-19T18:53:04.704+0000] {processor.py:157} INFO - Started process (PID=1270) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:53:04.715+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:53:04.720+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:53:04.718+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:53:04.794+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:53:04.765+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:53:04.802+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:53:04.844+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.158 seconds
+[2023-07-19T18:53:36.464+0000] {processor.py:157} INFO - Started process (PID=1329) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:53:36.527+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:53:36.584+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:53:36.572+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:53:36.737+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:53:36.666+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:53:36.760+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:53:37.016+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.857 seconds
+[2023-07-19T18:54:07.437+0000] {processor.py:157} INFO - Started process (PID=1387) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:54:07.451+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:54:07.462+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:54:07.457+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:54:07.547+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:54:07.527+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:54:07.554+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:54:07.647+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.222 seconds
+[2023-07-19T18:54:23.861+0000] {processor.py:157} INFO - Started process (PID=1441) to work on /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:54:23.884+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dag_raw_to_dds.py for tasks to queue
+[2023-07-19T18:54:23.895+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:54:23.893+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:54:24.059+0000] {logging_mixin.py:150} INFO - [2023-07-19T18:54:24.037+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dag_raw_to_dds.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 8, in <module>
+    from dags.python_scripts import update_table_merchants
+ModuleNotFoundError: No module named 'dags'
+[2023-07-19T18:54:24.063+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_raw_to_dds.py
+[2023-07-19T18:54:24.138+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_raw_to_dds.py took 0.300 seconds

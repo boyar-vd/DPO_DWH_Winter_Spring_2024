@@ -1,0 +1,13 @@
+[2024-02-25T10:02:07.173+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_data_from_csv.stg_to_ods scheduled__2024-02-25T10:01:00+00:00 [queued]>
+[2024-02-25T10:02:07.182+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_data_from_csv.stg_to_ods scheduled__2024-02-25T10:01:00+00:00 [queued]>
+[2024-02-25T10:02:07.183+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2024-02-25T10:02:07.195+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): stg_to_ods> on 2024-02-25 10:01:00+00:00
+[2024-02-25T10:02:07.205+0000] {standard_task_runner.py:57} INFO - Started process 89 to run task
+[2024-02-25T10:02:07.212+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'load_data_from_csv', 'stg_to_ods', 'scheduled__2024-02-25T10:01:00+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/dag_raw_to_dds.py', '--cfg-path', '/tmp/tmpyfzsnb0k']
+[2024-02-25T10:02:07.219+0000] {standard_task_runner.py:85} INFO - Job 9: Subtask stg_to_ods
+[2024-02-25T10:02:07.288+0000] {task_command.py:410} INFO - Running <TaskInstance: load_data_from_csv.stg_to_ods scheduled__2024-02-25T10:01:00+00:00 [running]> on host 44b084e90875
+[2024-02-25T10:02:07.370+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='load_data_from_csv' AIRFLOW_CTX_TASK_ID='stg_to_ods' AIRFLOW_CTX_EXECUTION_DATE='2024-02-25T10:01:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-25T10:01:00+00:00'
+[2024-02-25T10:02:07.374+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-02-25T10:02:07.387+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=load_data_from_csv, task_id=stg_to_ods, execution_date=20240225T100100, start_date=20240225T100207, end_date=20240225T100207
+[2024-02-25T10:02:07.425+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-02-25T10:02:07.448+0000] {taskinstance.py:2653} INFO - 2 downstream tasks scheduled from follow-on schedule check

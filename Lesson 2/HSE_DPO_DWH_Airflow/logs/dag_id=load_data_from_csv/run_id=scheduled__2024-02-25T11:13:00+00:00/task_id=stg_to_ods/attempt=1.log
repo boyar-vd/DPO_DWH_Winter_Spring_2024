@@ -1,0 +1,31 @@
+[2024-02-25T11:14:09.822+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_data_from_csv.stg_to_ods scheduled__2024-02-25T11:13:00+00:00 [queued]>
+[2024-02-25T11:14:09.831+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_data_from_csv.stg_to_ods scheduled__2024-02-25T11:13:00+00:00 [queued]>
+[2024-02-25T11:14:09.832+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2024-02-25T11:14:09.843+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): stg_to_ods> on 2024-02-25 11:13:00+00:00
+[2024-02-25T11:14:09.857+0000] {standard_task_runner.py:57} INFO - Started process 804 to run task
+[2024-02-25T11:14:09.862+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'load_data_from_csv', 'stg_to_ods', 'scheduled__2024-02-25T11:13:00+00:00', '--job-id', '117', '--raw', '--subdir', 'DAGS_FOLDER/dag_raw_to_dds.py', '--cfg-path', '/tmp/tmpw6eaxos3']
+[2024-02-25T11:14:09.864+0000] {standard_task_runner.py:85} INFO - Job 117: Subtask stg_to_ods
+[2024-02-25T11:14:09.934+0000] {task_command.py:410} INFO - Running <TaskInstance: load_data_from_csv.stg_to_ods scheduled__2024-02-25T11:13:00+00:00 [running]> on host 44b084e90875
+[2024-02-25T11:14:10.024+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='load_data_from_csv' AIRFLOW_CTX_TASK_ID='stg_to_ods' AIRFLOW_CTX_EXECUTION_DATE='2024-02-25T11:13:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-25T11:13:00+00:00'
+[2024-02-25T11:14:10.034+0000] {logging_mixin.py:150} INFO - priver_hello
+[2024-02-25T11:14:10.185+0000] {log.py:232} WARNING - 2024-02-25 11:14:10,185 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+[2024-02-25T11:14:10.185+0000] {log.py:128} INFO - select pg_catalog.version()
+[2024-02-25T11:14:10.189+0000] {log.py:232} WARNING - 2024-02-25 11:14:10,189 INFO sqlalchemy.engine.Engine [raw sql] {}
+[2024-02-25T11:14:10.189+0000] {log.py:128} INFO - [raw sql] {}
+[2024-02-25T11:14:10.216+0000] {log.py:232} WARNING - 2024-02-25 11:14:10,216 INFO sqlalchemy.engine.Engine select current_schema()
+[2024-02-25T11:14:10.216+0000] {log.py:128} INFO - select current_schema()
+[2024-02-25T11:14:10.221+0000] {log.py:232} WARNING - 2024-02-25 11:14:10,221 INFO sqlalchemy.engine.Engine [raw sql] {}
+[2024-02-25T11:14:10.221+0000] {log.py:128} INFO - [raw sql] {}
+[2024-02-25T11:14:10.247+0000] {log.py:232} WARNING - 2024-02-25 11:14:10,247 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+[2024-02-25T11:14:10.247+0000] {log.py:128} INFO - show standard_conforming_strings
+[2024-02-25T11:14:10.250+0000] {log.py:232} WARNING - 2024-02-25 11:14:10,250 INFO sqlalchemy.engine.Engine [raw sql] {}
+[2024-02-25T11:14:10.250+0000] {log.py:128} INFO - [raw sql] {}
+[2024-02-25T11:14:10.276+0000] {log.py:232} WARNING - 2024-02-25 11:14:10,276 INFO sqlalchemy.engine.Engine SELECT ods.load_fraud_full();
+[2024-02-25T11:14:10.276+0000] {log.py:128} INFO - SELECT ods.load_fraud_full();
+[2024-02-25T11:14:10.279+0000] {log.py:232} WARNING - 2024-02-25 11:14:10,279 INFO sqlalchemy.engine.Engine [raw sql] {}
+[2024-02-25T11:14:10.279+0000] {log.py:128} INFO - [raw sql] {}
+[2024-02-25T11:14:10.351+0000] {logging_mixin.py:150} INFO - priver_hello_2
+[2024-02-25T11:14:10.352+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-02-25T11:14:10.370+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=load_data_from_csv, task_id=stg_to_ods, execution_date=20240225T111300, start_date=20240225T111409, end_date=20240225T111410
+[2024-02-25T11:14:10.410+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-02-25T11:14:10.436+0000] {taskinstance.py:2653} INFO - 2 downstream tasks scheduled from follow-on schedule check

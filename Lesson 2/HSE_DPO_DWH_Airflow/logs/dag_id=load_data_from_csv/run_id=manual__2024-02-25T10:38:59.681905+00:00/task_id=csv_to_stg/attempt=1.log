@@ -1,0 +1,81 @@
+[2024-02-25T10:39:02.121+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_data_from_csv.csv_to_stg manual__2024-02-25T10:38:59.681905+00:00 [queued]>
+[2024-02-25T10:39:02.132+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_data_from_csv.csv_to_stg manual__2024-02-25T10:38:59.681905+00:00 [queued]>
+[2024-02-25T10:39:02.134+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2024-02-25T10:39:02.145+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): csv_to_stg> on 2024-02-25 10:38:59.681905+00:00
+[2024-02-25T10:39:02.159+0000] {standard_task_runner.py:57} INFO - Started process 161 to run task
+[2024-02-25T10:39:02.164+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'load_data_from_csv', 'csv_to_stg', 'manual__2024-02-25T10:38:59.681905+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/dag_raw_to_dds.py', '--cfg-path', '/tmp/tmp4v58ggga']
+[2024-02-25T10:39:02.168+0000] {standard_task_runner.py:85} INFO - Job 36: Subtask csv_to_stg
+[2024-02-25T10:39:02.245+0000] {task_command.py:410} INFO - Running <TaskInstance: load_data_from_csv.csv_to_stg manual__2024-02-25T10:38:59.681905+00:00 [running]> on host 44b084e90875
+[2024-02-25T10:39:02.336+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='load_data_from_csv' AIRFLOW_CTX_TASK_ID='csv_to_stg' AIRFLOW_CTX_EXECUTION_DATE='2024-02-25T10:38:59.681905+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-25T10:38:59.681905+00:00'
+[2024-02-25T10:39:02.341+0000] {logging_mixin.py:150} INFO - /////////////////////////////////////////////////////////////////////////////////
+[2024-02-25T10:39:02.343+0000] {logging_mixin.py:150} INFO - /opt/***
+[2024-02-25T10:39:02.345+0000] {logging_mixin.py:150} INFO - /////////////////////////////////////////////////////////////////////////////////
+[2024-02-25T10:39:07.925+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1911, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: table "csv_fraud_data" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 25, in csv_load
+    df.to_sql(con=engine, name='csv_fraud_data', schema='stg', if_exists='replace', index=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 2882, in to_sql
+    method=method,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1650, in prep_table
+    table.create()
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 860, in create
+    self.pd_sql.drop_table(self.name, self.schema)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1810, in drop_table
+    self.get_table(table_name, schema).drop()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 979, in drop
+    bind._run_ddl_visitor(ddl.SchemaDropper, self, checkfirst=checkfirst)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3238, in _run_ddl_visitor
+    conn._run_ddl_visitor(visitorcallable, element, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2221, in _run_ddl_visitor
+    visitorcallable(self.dialect, self, **kwargs).traverse_single(element)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/visitors.py", line 524, in traverse_single
+    return meth(obj, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/ddl.py", line 1106, in visit_table
+    self.connection.execute(DropTable(table))
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1385, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/ddl.py", line 81, in _execute_on_connection
+    self, multiparams, params, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1483, in _execute_ddl
+    compiled,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1954, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2135, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1911, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) table "csv_fraud_data" does not exist
+
+[SQL: 
+DROP TABLE stg.csv_fraud_data]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2024-02-25T10:39:07.976+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=load_data_from_csv, task_id=csv_to_stg, execution_date=20240225T103859, start_date=20240225T103902, end_date=20240225T103907
+[2024-02-25T10:39:07.995+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 36 for task csv_to_stg ((psycopg2.errors.UndefinedTable) table "csv_fraud_data" does not exist
+
+[SQL: 
+DROP TABLE stg.csv_fraud_data]
+(Background on this error at: https://sqlalche.me/e/14/f405); 161)
+[2024-02-25T10:39:08.088+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-02-25T10:39:08.135+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

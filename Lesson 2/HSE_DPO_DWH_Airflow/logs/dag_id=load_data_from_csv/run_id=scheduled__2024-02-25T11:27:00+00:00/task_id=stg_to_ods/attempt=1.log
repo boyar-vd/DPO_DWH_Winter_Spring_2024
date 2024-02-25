@@ -1,0 +1,22 @@
+[2024-02-25T11:28:16.695+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_data_from_csv.stg_to_ods scheduled__2024-02-25T11:27:00+00:00 [queued]>
+[2024-02-25T11:28:16.711+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_data_from_csv.stg_to_ods scheduled__2024-02-25T11:27:00+00:00 [queued]>
+[2024-02-25T11:28:16.714+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2024-02-25T11:28:16.755+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): stg_to_ods> on 2024-02-25 11:27:00+00:00
+[2024-02-25T11:28:16.778+0000] {standard_task_runner.py:57} INFO - Started process 1174 to run task
+[2024-02-25T11:28:16.801+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'load_data_from_csv', 'stg_to_ods', 'scheduled__2024-02-25T11:27:00+00:00', '--job-id', '163', '--raw', '--subdir', 'DAGS_FOLDER/dag_raw_to_dds.py', '--cfg-path', '/tmp/tmpoqywsyi9']
+[2024-02-25T11:28:16.805+0000] {standard_task_runner.py:85} INFO - Job 163: Subtask stg_to_ods
+[2024-02-25T11:28:16.881+0000] {task_command.py:410} INFO - Running <TaskInstance: load_data_from_csv.stg_to_ods scheduled__2024-02-25T11:27:00+00:00 [running]> on host 44b084e90875
+[2024-02-25T11:28:17.021+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='load_data_from_csv' AIRFLOW_CTX_TASK_ID='stg_to_ods' AIRFLOW_CTX_EXECUTION_DATE='2024-02-25T11:27:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-25T11:27:00+00:00'
+[2024-02-25T11:28:17.270+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag_raw_to_dds.py", line 23, in stg_to_ods
+    engine.execute('''SELECT ods.load_fraud_full();''').execution_options(autocommit=True)
+AttributeError: 'LegacyCursorResult' object has no attribute 'execution_options'
+[2024-02-25T11:28:17.299+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=load_data_from_csv, task_id=stg_to_ods, execution_date=20240225T112700, start_date=20240225T112816, end_date=20240225T112817
+[2024-02-25T11:28:17.320+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 163 for task stg_to_ods ('LegacyCursorResult' object has no attribute 'execution_options'; 1174)
+[2024-02-25T11:28:17.435+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-02-25T11:28:17.543+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

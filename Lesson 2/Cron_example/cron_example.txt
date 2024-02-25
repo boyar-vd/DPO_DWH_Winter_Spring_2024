@@ -1,0 +1,1 @@
+* * * * * /Users/vladislavboyar/opt/anaconda3/bin/python3 /Users/vladislavboyar/Desktop/HSE/DWH/Cron_example/report_maker.py
